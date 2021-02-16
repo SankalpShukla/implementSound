@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Move items into the trash can.</h2>
+    <form>
+        <input type="checkbox"  onclick="moveTrash()"><label class="lab">Empty Cola Can</label><br>
+        <input type="checkbox"  onclick="moveTrash()"><label class="lab">Empty Milk Bottle</label><br>
+        <input type="checkbox"  onclick="moveTrash()"><label class="lab">Lays Wrapper x 5</label><br>
+        <input type="checkbox"  onclick="moveTrash()"><label class="lab">Crumpled Paper</label><br>
+    </form>
+    <script>
+        
+            function moveTrash() { 
+                  var audio = new Audio("sound.mp3"); 
+                audio.play();
+                let elem = document.getElementsByClassName('lab');
+            } 
+    </script>
+</body>
+</html>
